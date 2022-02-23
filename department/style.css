@@ -10,12 +10,12 @@ table{
 }
 
 .left-box {
+    display: flex;
     float: left;
+    align-items: center;
+    justify-content: center;
     width: 30%;
-    height: auto;
-    text-align: center;
-    margin-top: 18px;
-    vertical-align: middle;
+    padding-top: 18px;
 }
 .right-box {
     float: right;
@@ -25,10 +25,10 @@ table{
 .left-box img{
     width:130px;
     height: 130px;
-    vertical-align: middle;
+    vertical-align: middle; /*적용 안되는 이유*/
 }
 #name{
-    margin-top: 10px;
+    padding-bottom: 3px;
     border-bottom: 2px solid black;
     width: 70%;
     font-size: 20px;

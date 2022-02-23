@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+        <div id="wrapper">
+            <div id="content">
+                <div>
+                    <h3 class="left"><label for="id">아이디</label></h3>
+                    <input type="text" class="width" id="id" >
+                </div>
+                <div>
+                    <h3 class="left"><label for="pwd">비밀번호</label></h3>
+                    <input type="text" class="width" id="pwd" >
+                </div>
+                <div>
+                    <h3 class="left"><label for="confirm_pwd">비밀번호 재확인</label></h3>
+                    <input type="password" class="width" id="confirm_pwd" >
+                </div>
+                <div>
+                    <h3 class="left"><label for="name">이름</label></h3>
+                    <input type="text" class="width" id="name" >
+                </div>
+                <div class="birthday">
+                    <h3 class="left"><label for="birth">생년월일</label></h3>
+                    <input type="text" class="birth" placeholder="년(4자)"> 
+                    <select name="month" class="birth" id="month">
+                        <option value="month">월</option>
+                        <option value="jan">1</option>
+                        <option value="feb">2</option>
+                        <option value="mar">3</option>
+                        <option value="apr">4</option>
+                        <option value="may">5</option>
+                        <option value="jun">6</option>
+                        <option value="jul">7</option>
+                        <option value="aug">8</option>
+                        <option value="sep">9</option>
+                        <option value="oct">10</option>
+                        <option value="nov">11</option>
+                        <option value="dev">12</option>
+                    </select> 
+                    <input type="text" class="birth" id="day" placeholder="일"> 
+                </div>
+                <div>
+                    <h3 class="left"><label for="id">성별</label></h3>
+                    <select name="gender" id="sel_gender">
+                        <option value="">성별</option>
+                        <option value="male">남</option>
+                        <option value="femail">여</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 class="left"><label for="email">본인 확인 이메일<span><small>(선택)</small></span></label></h3>
+                    <input type="text" class="width" id="email" >
+                </div>
+                <div>
+                    <h3 class="left"><label for="tel">휴대전화</label></h3>
+                    <div class="telcl">
+                        <select name="tel" id="sel_tel">
+                            <option value="kor">대한민국 +82</option>
+                            <option value="eng">영국 +44</option>
+                            <option value="ame">미국 +1</option>
+                        </select> 
+                        <input type="text" id="telnumber" placeholder="전화번호 입력">
+                        <button type="button">인증번호 받기</button>
+                        <input type="text" class="width" id="authentication" placeholder="인증번호 입력하세요">
+                    </div>
+                </div>
+                <div>
+                  <button type="button" style="width: 100%;">가입하기</button>
+                </div> 
+            </div>
+      </div>
+      
+</body>
+</html>
+<!-- <div style="display:flex">
+    <input type="text" style="width: 100px; margin-left: 8px; padding: 4px 8px 4px 8px;"> 
+    <input type="text" style="width: 100px; margin-left: 8px; padding: 4px 8px 4px 8px;"> 
+    <input type="text" style="width: 100px; margin-left: 8px; padding: 4px 8px 4px 8px;"> 
+</div> -->
