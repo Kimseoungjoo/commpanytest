@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        /* 웹 기본 속성을 제거하고 width, height를 화면크기에 맞춤 */
+        html, body { 
+            width: 100%;
+            height: 100%;
+            margin : 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 검정색 상단바 -->
+    <div>
+        <div style="width: 100%; height: 90px; background-color: black;"></div>
+    </div>
+    <!-- 상단바 끝 -->
+
+    <!-- 하단영역 시작 -->
+    <div style="display: flex; height: calc(100% - 90px);"> <!-- calc(100% - 90px)은 하단영역 높이를 상단바의 길이만큼 빼준다.-->
+        <div style="width: 90px; height: 100%; background-color: red;"></div> <!-- 붉은색 레프트바 -->
+        <!-- 살구색 영역 시작 --> <!-- calc(100% - 40px)은 padding 20px로 인해 늘어난 길이 (40px)을 전체높이에서 빼준다.-->
+        <div style="width: 100%; height: calc(100% - 40px); background-color: wheat; padding: 20px; display: flex; flex-direction: column;">
+             <!-- 흰색바탕 영역 1/2 시작 -->
+            <div style="width:100%; height: 100%; display: flex;">
+                <div style="width: 100%; background-color: white; border-radius: 12px; padding: 20px;">
+                    <!-- 좌상단 --> 11
+                </div>
+                <div style="width: 100%; background-color: white; margin-left: 20px; border-radius: 12px; padding: 20px;">
+                    <!-- 우상단 --> 22
+                </div>
+            </div>
+            <!-- 흰색바탕 영역 1/2 끝 -->
+
+            <!-- 흰색바탕 영역 1/2 시작 -->
+            <div style="width:100%; height: 100%; display: flex; margin-top: 20px;">
+                <div style="width: 100%; background-color: white; border-radius: 12px; padding: 20px;">
+                    <!-- 좌하단 --> 33
+                </div>
+                <div style="width: 100%; background-color: white; margin-left: 20px; border-radius: 12px; padding: 20px;">
+                    <!-- 우하단 --> 44
+                </div>
+            </div>
+            <!-- 흰색바탕 영역 1/2 끝 -->
+        </div>
+        <!-- 살구색 영역 끝 -->
+    </div>
+    <!-- 하단영역 끝 -->
+</body>
+</html>
