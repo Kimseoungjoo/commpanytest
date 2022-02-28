@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="conclusion.css">
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="title">[2024] 시간대별체결</div>
+        </div>
+        <div class="nav">
+                <div class="input_type">
+                    <input type="number" max="999999" min="0">
+                    <input type="text">
+                </div>
+                <div class="selected">
+                    <select name="kind" id="kind">
+                        <option value="Tick">Tick</option>
+                        <option value="Tick">Tick</option>
+                        <option value="Tick">Tick</option>
+                    </select>
+                </div>
+                <div class="radiobox">
+                    <input type="radio"><label for="today">당일</label>
+                    <input type="radio"><label for="submit">전달</label>
+                </div>
+            <div class="time_search">
+                <label for="time">시간검색</label>
+                <input type="time">
+            </div>
+            <div class="list_btn">
+                <input type="button" value="조회">
+            </div>
+        </div>
+        <div class="table_main">
+            <table>
+                <tr id="head">
+                    <td>시간</td>
+                    <td>현재가</td>
+                    <td>전일대비</td>
+                    <td>등락률(%)</td>
+                    <td>체결수량</td>
+                    <td>매도호가</td>
+                    <td>매수호가</td>
+                    <td>거래량</td>
+                    <td>거래대금(백만)</td>
+                </tr>
+                <tbody id="my_tbody">
+                    
+                </tbody>
+           
+            </table>
+        </div>
+    </div>
+</body>
+<script src="conclusion.js"></script>
+</html>

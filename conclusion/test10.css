@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    text-align: center;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap > div:nth-child(1) {
+    background-color: #5b5b5b;
+    display: flex;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+
+#wrap > div:nth-child(1) > div:first-child {
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+
+#wrap > div:nth-child(1) > div:last-child {
+    width: 100%;
+    text-align: right;
+}
+
+#seach {  
+    height: 25px;
+    background-color: #bdc1c0;
+}
+
+#seach > div {
+    float: left;
+}
+
+#seach > div:first-child {
+    display: flex;
+}
+
+#seach > div:first-child > div {
+    display: flex;    
+    flex-direction: column;
+}
+
+.stocksUpDownBtn {
+    height: 12.5px;
+    font-size: 0.1em;
+}
+
+#seach > div:nth-child(2) > select {
+    height: 25px;
+    width: 150px;
+}
+
+#seach > div:nth-child(3) > select {
+    height: 25px;
+    width: 50px;
+}
+
+#seach > div:nth-child(4) {
+    margin: 0px 10px;    
+    line-height: 25px;
+}
+
+#seach > div:nth-child(4) > input {
+    margin: 0;
+}
+
+#seach > div:nth-child(5) {
+    margin: 0px 10px;    
+    line-height: 25px;
+}
+
+#seach > div:nth-child(5) > input {
+    position: absolute;
+    margin-left: 3px;
+}
+
+#seach > div:nth-child(6) {
+    margin: 0px 10px;    
+    line-height: 25px;
+    float: right;
+}
+
+#seach > div:nth-child(6) > button {
+    width: auto;
+    padding: 0px 5px;
+}
+
+#chart {
+    height: calc(100% - 50px); 
+    overflow: auto;
+}
+
+table {
+    width: 100%;    
+    border-spacing: inherit;
+}
+
+th {
+    background-color: #dfddde;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+td {
+    text-align: right;
+}
+
+table tr td {
+    border-right: 1px solid black;
+}
+
+table tr > td:first-child {
+    text-align: center;
+}
+
+table tr > td:last-child {
+    border: none;
+}
+
+tr:nth-child(4n), tr:nth-child(4n + 1) {
+    background-color: #eeeeee;
+}
+
+table {
+    width: 100%;
+  }
+  
+  table, td {
+    border-collapse: collapse;
+    /* border: 1px solid #000; */
+  }
+  
+  thead {
+    display: table;
+    width: calc(100% - 17px);
+  }
+  
+  tbody {
+    display: block;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  
+  th, td {
+    width: 11.11%;
+    padding: 5px;
+    word-break: break-all;
+  }
+  
+  tr {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  td {
+    text-align: center;
+    border-bottom: none;
+    border-left: none;
+  }
