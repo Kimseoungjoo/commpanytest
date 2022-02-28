@@ -1,0 +1,129 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;  
+    overflow: hidden; /* 화면전체의 스크롤 제거 */
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+/*해더 부분(상단 고정 부분)*/
+.header{
+    width: 100%;
+    height: 90px;
+    /* position: fixed; */
+    display: flex;
+    background-color: rgb(16, 17, 17);
+    justify-content: center;
+    align-items: center;
+}
+#tab{
+    width: 100%;
+    text-align: center;
+}
+#tab_1{
+    color:silver;
+}
+#tab_2{
+    color:silver;
+}
+#tab_1:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+#tab_2:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+#tab_1,#tab_2{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 내용 부분 */
+.center{
+    height: calc(100% - 96px); /* 100% - (탭의 90px + padding bottom 3px + padding top 3px) */
+    padding: 3px;
+    overflow: auto; /* 특정 영역에 대한 세로 스크롤 생성 */
+    display: flex;
+    flex-direction: column;
+}
+#content{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+/* 내용 상단 부분*/
+#top{
+    display: flex;
+}
+#img_div{
+    float: left;
+}
+#font_div{
+    float: left;
+    color: white;
+    margin-left: 5px;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+/* 내용 중단 */
+#middle{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    padding-left: 20px;
+}
+li{
+    font-weight: bolder;
+}
+#content_2{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid silver;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+#recommend, #now{
+    display: flex;
+    justify-content: space-between;
+}
+#now{
+    padding-top: 10px;
+}
+#now_right{
+    display: flex;
+    flex-direction: column;
+}
+#text_right{
+    font-size: 25px;
+    color: white;
+}
+#text_right1{
+    text-align: right;
+    color: white;
+    padding-bottom: 5px;
+}
+#text_right2{
+    text-align: right;
+    color: red;
+    padding-bottom: 10px;
+}
+#text_right3{
+    text-align: right;
+    padding-top: 10px;
+    border-top: 1px solid silver;
+}

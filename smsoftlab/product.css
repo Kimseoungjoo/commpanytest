@@ -1,0 +1,56 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    width:100%;
+    height: 400px;
+    background-image: url("https://news.samsungdisplay.com/wp-content/uploads/2018/12/dfdfasf.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.7;
+}
+#intro {
+    color: white;
+}
+.nav{
+    height: 30px;
+    background-color: silver;
+    margin: 0 auto;    
+    text-align: center;
+    display: flex;
+    width: 1200px;
+    position: relative;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    float: left;
+}
+li{
+    width: 25%;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+li a{
+    color: silver;
+    padding: 8px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+li:hover{
+    color: blue;
+    
+}

@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width : 768px;
+}
+.container{
+    width: 100%;
+}
+.header{
+    width: 100%;
+}
+.center{
+    width: calc(100% - 20px);
+}
+#content{
+    width: 100%;
+}
