@@ -1,5 +1,3 @@
-
-    var arrcnt = 0;
     var arr1=[];
 
     setInterval(function (){
@@ -25,29 +23,26 @@
         AMOUNT1:amount1, AMOUNT_PRICE:amount_price};
 
    arr1.push(obj);
+   /* 동적 태그 생성 */
     var str = "<tr id='content'><td id='time'>"
-    /* 동적 태그 생성 */
-    str+=arr1[arrcnt].NOW_TIME+"</td>";
-    str+="<td id='price'>"+arr1[arrcnt].PRICE+"</td>";
-    str+="<td id='y_price'>▲ &nbsp"+arr1[arrcnt].Y_PRICE+"</td>";
-    str+="<td id='percent'>+"+arr1[arrcnt].PERCENT+"</td>";
-    str+="<td id='amount'>"+arr1[arrcnt].AMOUNT+"</td>";
-    str+="<td id='price1'>"+arr1[arrcnt].PRICE1+"</td>";
-    str+="<td id='price2'>"+arr1[arrcnt].PRICE2+"</td>";
-    str+="<td id='amount1'>"+arr1[arrcnt].AMOUNT1+"</td>";
-    str+="<td id='amount_price'>"+arr1[arrcnt].AMOUNT_PRICE+"</td></tr>";
-    console.log(str);
+    str+=arr1[(arr1.length - 1)].NOW_TIME+"</td>";
+    str+="<td id='price'>"+arr1[(arr1.length - 1)].PRICE+"</td>";
+    str+="<td id='y_price'>▲ &nbsp"+arr1[(arr1.length - 1)].Y_PRICE+"</td>";
+    str+="<td id='percent'>+"+arr1[(arr1.length - 1)].PERCENT+"</td>";
+    str+="<td id='amount'>"+arr1[(arr1.length - 1)].AMOUNT+"</td>";
+    str+="<td id='price1'>"+arr1[(arr1.length - 1)].PRICE1+"</td>";
+    str+="<td id='price2'>"+arr1[(arr1.length - 1)].PRICE2+"</td>";
+    str+="<td id='amount1'>"+arr1[(arr1.length - 1)].AMOUNT1+"</td>";
+    str+="<td id='amount_price'>"+arr1[(arr1.length - 1)].AMOUNT_PRICE+"</td></tr>";
+    
       
-    console.log(JSON.stringify(obj));    
-    console.log(JSON.stringify(arr1));    
+   
     $("#my_tbody").prepend(str); // tbody 동적 태그 붙임  
-    arrcnt++;
+   
 
     if(arr1.length==8){
             arr1.shift(); // 배열이 8이면 가장 오래된 데이터 삭제 
             datatbl.deleteRow(-1);
-            arrcnt=7;
-            console.log(JSON.stringify(arr1));    
     }
 },1000);
 

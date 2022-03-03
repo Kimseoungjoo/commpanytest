@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			genRowspan("first");
+		});
+
+		function genRowspan(className){
+			$("." + className).each(function() {
+				var rows = $("." + className + ":contains('" + $(this).text() + "')");
+				console.log(rows.length);
+				if (rows.length > 1) {
+					rows.eq(0).attr("rowspan", rows.length);
+					rows.not(":eq(0)").remove();
+				}
+			});
+		}
+	</script>
+
+	<title>rowspan</title>
+</head>
+<body>
+
+	<table cellspacing="0" border="1">
+		<thead>
+			<tr>
+				<th>소속</th>
+				<th>이름</th>
+				<th>직책</th>
+			</tr>
+		</thead>
+		<tr>
+			<td class="first">개발팀</td>
+			<td>김땡땡</td>
+			<td>사원</td>
+		</tr>
+		<tr>
+			<td class="first">개발팀</td>
+			<td>김땡땡</td>
+			<td>사원</td>
+		</tr>
+		<tr>
+			<td class="first">개발팀</td>
+			<td>김땡땡</td>
+			<td>사원</td>
+		</tr>
+		<tr>
+			<td class="first">개발팀</td>
+			<td>김땡땡</td>
+			<td>사원</td>
+		</tr>
+		<tr>
+			<td class="first">개발팀</td>
+			<td>김땡땡</td>
+			<td>사원</td>
+		</tr>
+		<tr>
+			<td class="first">개발팀</td>
+			<td>이땡땡</td>
+			<td>대리</td>
+		</tr>
+		<tr>
+			<td class="first">개발팀</td>
+			<td>박땡땡</td>
+			<td>과장</td>
+		</tr>
+		<tr>
+			<td class="first">영업팀</td>
+			<td>김땡땡</td>
+			<td>사원</td>
+		</tr>
+		<tr>
+			<td class="first">영업팀</td>
+			<td>오땡땡</td>
+			<td>차장</td>
+		</tr>
+	</table>
+
+</body>
+</html>
