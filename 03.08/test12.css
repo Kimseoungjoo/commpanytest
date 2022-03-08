@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0px;
+}
+.container{
+    width: 400px;
+    height: 680px;
+}
+/*===================container 머리부분============================*/
+.container .header{
+    width: 386px;
+    height: 32px;
+    padding: 8px 0px 8px 14px;
+    display: flex;    
+    border-bottom: 1px solid silver;
+}
+.search{
+    width: 70%;
+    height: 33px;
+    float: left;
+    border-right: 1px solid silver;
+}
+.option{
+    width: 20%;
+    height: 24px;
+    float: left;
+    padding-left: 14px;
+    padding-top: 6px;
+}
+#in_search{
+    width: 80%;
+    height: 33px;
+    padding: 0px;
+    border: 0px;
+}
+.a_img{
+    padding-top: 6px;
+    width: 40px;
+    height: 26px;
+    float: right;
+    padding-top: 4px;
+}
+.search_img{
+    width: 24px;
+    height: 24px;
+} 
+.option_img{
+    width: 20px;
+    height: 20px;
+}
+/*=================== container header 네비게이션 바=======================*/
+.nav{
+    display: table;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid silver;
+    vertical-align: middle;
+}
+ul{
+    display: table-cell;
+    width: 100%;
+    height: 40px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+li{
+    width: 20%;
+    height: 40px;
+    display: flex;
+    float: left;
+}
+li a{
+    justify-content: center;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-size: 15px;    
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
+li:hover{
+    text-decoration: underline;
+}
+li a:visited{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+/*-----------container header tbl부분 --------------*/
+.tbl_head{
+    width: 100%;
+    height: 30px;
+}
+#t_header{
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+th{
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+}
+#t_header thead{
+    position: sticky;
+}
+#t_header tbody{
+    overflow: scroll;
+}
+th a img{
+    vertical-align: middle;
+    margin-left: 4px;
+}
+th a{
+    text-decoration: none;
+}
+/*======================tbody태그========================*/
+.tbl_body{
+    overflow: scroll;
+    width: 407px;
+    height: calc(100% - 120px);
+    text-align: right;
+}
+.tbl_body::-webkit-scrollbar{
+    width: 7px;
+}
+.tbl_body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(204, 200, 200);
+}
+.tbl_body::-webkit-scrollbar-track{
+    background-color: white;
+}
+.t_body{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: right;
+}
+
+.favorites img{
+    width: 11px;
+    height: 11px;
+}

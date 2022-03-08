@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<link rel="stylesheet" href="general_quote.css">
+<link rel="stylesheet" href="general_quote3.css">
 <body>
     <div class="container">
      
@@ -19,14 +19,14 @@
                 <th colspan="2" id="general">호가주문</th>                
             </thead>
                 <tbody id="pr_h">
-                    <tr class="up_price">
-                        <td colspan="2" id="amount1"></td>
-                        <td colspan="2" id="price"></td>
-                        <td colspan="2" rowspan="8">
-                            <div class="tbody_container">
+                    <tr class="up_price" >
+                        <td colspan="2" id="amount1" onmouseover="changeColor(0)" onmouseout="mouse_out()"></td>
+                        <td colspan="2" id="price" onmouseover="changeColor(0)" onmouseout="mouse_out()"></p></td>
+                        <td colspan="2" rowspan="8" onmouseover="mouse_out()">
+                            <div class="tbody_container" >
                                 <div class="transaction">
                                     <dt>거래량</dt>
-                                    <dd>1232131</dd>
+                                    <dd></dd>
                                 </div>
                                 <div id="week">
                                     <div id="w_height">
@@ -47,51 +47,49 @@
                                 <div id="day">
                                     <div id="d_final">
                                         <dt>전일 종가</dt>
-                                        <dd>10000</dd>
+                                        <dd></dd>
                                     </div>
                                     <div id="d_hieght">
                                         <dt>당일고가</dt>
-                                        <dd>10000
-                                            +0.45%</dd>
+                                        <dd></dd>
                                     </div>
                                     <div id="d_row">
-                                        <dt>당일고가</dt>
-                                        <dd>10000
-                                            +0.45%</dd>
+                                        <dt>당일저가</dt>
+                                        <dd></dd>
                                     </div>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr class="up_price">
+                    <tr class="up_price " onmouseover="changeColor(1)" onmouseout="mouse_out()">
                         <td colspan="2" id="amount1"></td>
                         <td colspan="2" id="price"></td>
                     </tr>
-                    <tr class="up_price">
+                    <tr class="up_price " onmouseover="changeColor(2)" onmouseout="mouse_out()">
                         <td colspan="2" id="amount1"></td>
                         <td colspan="2" id="price"></td>
                     </tr>
-                    <tr class="up_price">
+                    <tr class="up_price " onmouseover="changeColor(3)" onmouseout="mouse_out()">
                         <td colspan="2" id="amount1"></td>
                         <td colspan="2" id="price"></td>
                     </tr>
-                    <tr class="up_price">
+                    <tr class="up_price " onmouseover="changeColor(4)" onmouseout="mouse_out()">
                         <td colspan="2" id="amount1"></td>
                         <td colspan="2" id="price"></td>
                     </tr>
-                    <tr class="up_price">
+                    <tr class="up_price " onmouseover="changeColor(5)" onmouseout="mouse_out()">
                         <td colspan="2" id="amount1"></td>
                         <td colspan="2" id="price"></td>
                     </tr>
-                    <tr class="up_price">
+                    <tr class="up_price " onmouseover="changeColor(6)" onmouseout="mouse_out()">
                         <td colspan="2" id="amount1"></td>
                         <td colspan="2" id="price"></td>
                     </tr>
-                    <tr class="up_price">
+                    <tr class="up_price " onmouseover="changeColor(7)" onmouseout="mouse_out()">
                         <td colspan="2" id="amount1"></td>
                         <td colspan="2" id="price"></td>
                     </tr>
-                    <tr class="down_price">
+                    <tr class="down_price" >
                         <td colspan="2" rowspan="8" style="vertical-align: top;">
                             <dt style="float: left; width : 60%">체결강도</dt>
                             <dd>123</dd>
@@ -101,38 +99,41 @@
                                         <th>체결가</th>
                                         <th>체결량</th>
                                     </thead>
-                                    <tbody></tbody>
+                                    <tbody id="con_body">
+                                        
+                                    </tbody>
                                 </table>
                             </div>
                         </td>
+                        <td colspan="2" id="price" onmouseover="d_changeColor(8)" onmouseout="d_mouse_out()"></td>
+                        <td colspan="2" id="amount1" onmouseover="d_changeColor(8)" onmouseout="d_mouse_out()">
+                           </td>
+                    </tr>
+                    <tr class="down_price" onmouseover="d_changeColor(9)" onmouseout="d_mouse_out()">
                         <td colspan="2" id="price"></td>
                         <td colspan="2" id="amount1"></td>
                     </tr>
-                    <tr class="down_price">
+                    <tr class="down_price" onmouseover="d_changeColor(10)" onmouseout="d_mouse_out()">
                         <td colspan="2" id="price"></td>
                         <td colspan="2" id="amount1"></td>
                     </tr>
-                    <tr class="down_price">
+                    <tr class="down_price" onmouseover="d_changeColor(11)" onmouseout="d_mouse_out()">
                         <td colspan="2" id="price"></td>
                         <td colspan="2" id="amount1"></td>
                     </tr>
-                    <tr class="down_price">
+                    <tr class="down_price" onmouseover="d_changeColor(12)" onmouseout="d_mouse_out()">
                         <td colspan="2" id="price"></td>
                         <td colspan="2" id="amount1"></td>
                     </tr>
-                    <tr class="down_price">
+                    <tr class="down_price" onmouseover="d_changeColor(13)" onmouseout="d_mouse_out()">
                         <td colspan="2" id="price"></td>
                         <td colspan="2" id="amount1"></td>
                     </tr>
-                    <tr class="down_price">
+                    <tr class="down_price" onmouseover="d_changeColor(14)" onmouseout="d_mouse_out()">
                         <td colspan="2" id="price"></td>
                         <td colspan="2" id="amount1"></td>
                     </tr>
-                    <tr class="down_price">
-                        <td colspan="2" id="price"></td>
-                        <td colspan="2" id="amount1"></td>
-                    </tr>
-                    <tr class="down_price">
+                    <tr class="down_price" onmouseover="d_changeColor(15)" onmouseout="d_mouse_out()">
                         <td colspan="2" id="price"></td>
                         <td colspan="2" id="amount1"></td>
                     </tr>
@@ -142,5 +143,5 @@
         </div>
     </div>
 </body>
-<script src="general_quote.js"></script>
+ <script src="general_quote3.js"></script>
 </html>

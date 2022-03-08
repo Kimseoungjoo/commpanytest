@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="test12.css"></link>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="container header" >
+                <div class="search">
+                    <input type="text" id="in_search" placeholder="코인명 / 심볼 검색" onfocus="this.placeholder=''" onblur="this.placeholder='코인명 / 심볼 검색'"><a href="#" class="a_img"><img class="search_img" src="search.png"></img></a>
+                </div>
+                <div class="option"><img class="option_img" src="option.png"></div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">원화</a></li>
+                    <li><a href="#">BTC</a></li>
+                    <li><a href="#">USDT</a></li>
+                    <li><a href="#">보유</a></li>
+                    <li><a href="#">관심</a></li>
+                </ul>
+            </div>
+            <div class="tbl_head">
+                <table id="t_header">
+                    <colgroup>
+                        <col width="20px">
+                        <col width="93px">
+                        <col width="101px">
+                        <col width="84px">
+                        <col width="102px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2"><a href="">한글명<img src="https://cdn.upbit.com/images/ico_change.c6ad0e9.png" alt=""></a></th>
+                            <th><a href="">현재가<img src="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png" alt=""></a></th>
+                            <th><a href="">전일대비<img src="https://cdn.upbit.com/images/ico_up_down.d050377.png" alt=""></a></th>
+                            <th><a href="">거래대금<img src="https://cdn.upbit.com/images/ico_up_down.d050377.png" alt=""></a></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl_body">
+                <table class="t_body">
+                    <colgroup>
+                        <col width="20px">
+                        <col width="93px">
+                        <col width="101px">
+                        <col width="84px">
+                        <col width="102px">
+                    </colgroup>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">이더리움</br>ETH/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인캐시</br>BCH/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">에이브</br>AAVE/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">라이트코인</br>RTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">솔라나</br>SOL/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인에스브이</br>BSV/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">에이다</br>ADA/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name">비트코인</br>BTC/KRW</td>
+                        <td class="price">5000000</td>
+                        <td class="d_percent">123123</td>
+                        <td class="total_price">55220000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

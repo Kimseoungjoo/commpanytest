@@ -116,3 +116,9 @@ td
     color: blue;
     background-color: rgb(178, 186, 228);
 }
+tr {
+    height: 40px;
+}
+p{
+    height: 10px;
+}
