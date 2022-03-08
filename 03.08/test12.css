@@ -140,8 +140,13 @@ th a{
     font-size: 12px;
     text-align: right;
 }
-
+.t_body tr{
+    height: 30px;
+}
 .favorites img{
     width: 11px;
     height: 11px;
+}
+.name{
+    font-size: 10px;
 }
