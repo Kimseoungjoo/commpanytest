@@ -10,7 +10,7 @@ body{
 .container .header{
     width: 386px;
     height: 32px;
-    padding: 8px 0px 8px 14px;
+    padding: 8px 0px 1px 14px;
     display: flex;    
     border-bottom: 1px solid silver;
 }
@@ -82,12 +82,16 @@ li a{
     width: 80px;
     text-align: center;
 }
+
+li:nth-child(1) a{
+    border-bottom: 2px solid blue;
+}
 li:hover{
     text-decoration: underline;
+    color: blue;
 }
 li a:visited{
-    color: blue;
-    border-bottom: 2px solid blue;
+    color: black;
 }
 /*-----------container header tbl부분 --------------*/
 .tbl_head{
@@ -107,15 +111,25 @@ th{
 #t_header thead{
     position: sticky;
 }
-#t_header tbody{
-    overflow: scroll;
+th:hover{
+    text-decoration: underline;
 }
+
 th a img{
     vertical-align: middle;
     margin-left: 4px;
 }
 th a{
     text-decoration: none;
+}
+th a:link{
+    color: silver;
+}
+th a:visited{
+    color: silver;
+}
+th a:active{
+    color: silver;
 }
 /*======================tbody태그========================*/
 .tbl_body{
@@ -136,11 +150,12 @@ th a{
 }
 .t_body{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     font-size: 12px;
     text-align: right;
 }
 .t_body tr{
+    width: 100%;
     height: 30px;
 }
 .favorites img{
@@ -149,4 +164,14 @@ th a{
 }
 .name{
     font-size: 10px;
+}
+.up td:nth-child(n + 3):nth-child(-n + 4){
+    color: red;
+}
+
+.down td:nth-child(n + 3):nth-child(-n + 4){
+    color: blue;
+}
+.t_body tr:hover{
+    background-color: rgb(235, 230, 230);
 }

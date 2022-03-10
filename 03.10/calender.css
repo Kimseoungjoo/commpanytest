@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container{
+    width: 70%;
+    margin: 50px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.year_month{
+    font-size: 35px;
+}
+.nav{
+    display: flex;
+}
+.pre, .next{
+    width: 28px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: transparent;
+  cursor: pointer;
+}

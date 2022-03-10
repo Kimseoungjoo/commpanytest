@@ -19,7 +19,7 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="#">원화</a></li>
+                    <li><a href="#" style="color: blue;">원화</a></li>
                     <li><a href="#">BTC</a></li>
                     <li><a href="#">USDT</a></li>
                     <li><a href="#">보유</a></li>
@@ -37,10 +37,10 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th colspan="2"><a href="">한글명<img src="https://cdn.upbit.com/images/ico_change.c6ad0e9.png" alt=""></a></th>
-                            <th><a href="">현재가<img src="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png" alt=""></a></th>
-                            <th><a href="">전일대비<img src="https://cdn.upbit.com/images/ico_up_down.d050377.png" alt=""></a></th>
-                            <th><a href="">거래대금<img src="https://cdn.upbit.com/images/ico_up_down.d050377.png" alt=""></a></th>
+                            <th colspan="2"><a href="javascript:void(0)" id="in_name" onclick="changeName()">한글명<img src="https://cdn.upbit.com/images/ico_change.c6ad0e9.png" alt=""></a></th>
+                            <th><a href="javascript:void(0)" id="sortPrice" onclick="sortPrice()">현재가<img src="https://cdn.upbit.com/images/ico_up_down.d050377.png" alt=""></a></th>
+                            <th><a href="javascript:void(0)" id="d_pre" onclick="sortDprice() ">전일대비<img src="https://cdn.upbit.com/images/ico_up_down.d050377.png" alt=""></a></th>
+                            <th><a href="javascript:void(0)" id="conclu" onclick="conclu()">거래대금<img src="https://cdn.upbit.com/images/ico_up_down.d050377.png" alt=""></a></th>
                         </tr>
                     </thead>
                 </table>
@@ -55,132 +55,162 @@
                         <col width="102px">
                     </colgroup>
                     <tbody>
+                   
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>비트코인</strong></br>BTC/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>이더리움</strong></br>ETH/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>비트코인캐시</strong></br>BCH/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>에이브</strong></br>AAVE/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>라이트코인</strong></br>RTC/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>솔라나</strong></br>SOL/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>비트코인에스브이</strong></br>BSV/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>에이다</strong></br>ADA/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>코스모스</strong></br>ATOM/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>스트라이크</strong></br>STRK/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>비트코인골드</strong></br>BTG/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>이더리움클래식</strong></br>ETC/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>퀸텀</strong></br>QTUM/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>네오</strong></br>NEO/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>플로우</strong></br>FLOW/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>가스</strong></br>GAS/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>톤</strong></br>TON/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
                     <tr>
                         <td class="favorites"><img src="favorites.png" alt=""></td>
-                        <td class="name"><strong>카바</strong></br>KAVA/KRW</td>
-                        <td class="price">5000000</td>
-                        <td class="d_percent">123123</td>
-                        <td class="total_price">55220000</td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
                     </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
+                    </tr>
+                    <tr>
+                        <td class="favorites"><img src="favorites.png" alt=""></td>
+                        <td class="name"></td>
+                        <td class="price"></td>
+                        <td class="d_percent"></td>
+                        <td class="total_price"></td>
+                    </tr>
+                    
                 </tbody>
                 </table>
             </div>
