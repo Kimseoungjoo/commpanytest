@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+/*그림 min-width*/
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+.right{
+  position: relative;
+  right: -50px;
+  height: 30px;
+}
+#logo{
+    width: 200px;
+    height: 30px;
+}
+#camera{
+    width: 30px;
+    height: 30px;
+}
+.search{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.search input {
+    background:  #0f4e97/*rgb(212, 209, 209)*/;
+    background-image: url(search.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 8px 45px;
+    border: 0px;
+    width: 50%;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: #fdd237;
+}
+input:focus{
+    background: white;
+    background-image: url(search.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+.alllist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.tableContainer{
+    width: 90%;
+    height: 637px;
+    overflow-y: auto;
+    border: 1px solid rgb(212, 209, 209);
+  }
+  .tableContainer::-webkit-scrollbar{
+    width: 10px;
+  }
+  .tableContainer::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background-color: rgb(77, 75, 75);
+  }
+  .tableContainer::-webkit-scrollbar-track{
+    background-color: rgb(189, 184, 184);
+  }
+  .table{
+    display: table;
+    width : 100%;
+    font-family: Roboto, "Noto Sans KR", sans-serif, 
+    AppleSDGothicNeo-Regular, "Malgun Gothic", Dotum;
+  }
+  .row1{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: table-row;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    background-color:  #0f4e97;
+    border-bottom: 1px solid rgb(179, 175, 175);
+    color: white;
+    font-weight: bold;
+    line-height: 10px;
+    z-index: 99;
+  }
+  
+  .row{
+    position: sticky;
+    top: 0;
+    display: table-row;
+    text-align: right;
+    border-bottom: 1px solid  #0f4e97;
+    font-weight: bold;
+    line-height: 45px;
+  }
+  .cell{
+  display: table-cell;
+  text-align: center;
+  font-size: small;
+  }
+  
+  .col1{
+    width:20%
+  }
+  .col2{
+    width:15%
+  }
+  .col3{
+    width:25%
+  }
+  .col4{
+    width:20%
+  }
+  .col5{
+    width:20%
+  }
+
+.insert{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.insertbtn{
+    width: 80%;
+    background-color :  #0f4e97;
+    font-family: Roboto, "Noto Sans KR", sans-serif, 
+    AppleSDGothicNeo-Regular, "Malgun Gothic", Dotum;
+    color: #fdd237;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 0px;
+}

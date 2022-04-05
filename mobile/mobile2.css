@@ -1,0 +1,118 @@
+body {
+  margin: 0px;
+  width: 100%;
+  height: 896px;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px
+}
+.left{
+  width: 50%;
+  height: 30px;
+  text-align: center;
+}
+.right{
+  position: relative;
+  right: -50px;
+  height: 30px;
+}
+#logo{
+  width: 200px;
+  height: 20px;
+}
+#camera{
+  width: 30px;
+  height: 30px;
+}
+.center{
+  width: 100%;
+  height: 400px;
+}
+.center_head{
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.allbtn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.leftbtn{
+  width:150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.rightbtn{
+  width:150px;
+  height : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.insert {
+  height: 25%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.insertbtn{
+  width: 100px;
+  height: 40px;
+  border: 0px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.insertbtn:hover{
+  background-color: #0f4e97;
+  color: #fdd237;
+}
+.footer{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.btntbl{
+  width: 400px;
+  display: table;
+}
+.f_left{
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.f_right{
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.prev,.next{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  font-size: 14px;
+  background-color: #0f4e97;
+  color: #fdd237;
+}
+

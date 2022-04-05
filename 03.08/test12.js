@@ -24,7 +24,8 @@ var total_arr = [ // price = 거래가격, d_price = 전일종가 , conclusion =
     {"f_name":"카이버네트워크","l_name":"KNC/KRW","price":3000,"d_price":3000,"conclusion":78177,"e_name":"Kyber Network", "percent":0},
     {"f_name":"아르고","l_name":"AERGO/KRW","price":12000,"d_price":12000,"conclusion":481218,"e_name":"Aergo", "percent": 0},
 ];
-
+const down = "https://cdn.upbit.com/images/ico_up_down_2.71770c7.png";
+const up = "https://cdn.upbit.com/images/ico_up_down_1.d63eb3d.png";
 setInterval(function (){
 
     for(row in total_arr){
@@ -43,24 +44,40 @@ setInterval(function (){
     }else{
         create_e_tbl();
     }
-},1000); // 초당 돌아가는 함수 끝
+},10); // 초당 돌아가는 함수 끝
 
 function create_k_tbl(){ // 테이블 창에 띄우기 
     var s_src = $("#sortPrice img").attr("src");
     var d_src = $("#d_pre img").attr("src"); 
     var c_src = $("#conclu img").attr("src"); 
-    if(s_src=="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png"){
-        a();
-    }else if(s_src=="https://cdn.upbit.com/images/ico_up_down_1.d63eb3d.png"){
-        b();
-    }else if(d_src=="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png"){
-        c();
-    }else if(d_src=="https://cdn.upbit.com/images/ico_up_down_1.d63eb3d.png"){
-        d();
-    }else if(c_src=="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png"){
-        e();
-    }else if(c_src=="https://cdn.upbit.com/images/ico_up_down_1.d63eb3d.png"){
-        f();
+    if(s_src==down){
+        console.time('calculatingTime');
+        total_arr.sort(function(a,b){
+            return parseFloat(b.price) - parseFloat(a.price);
+        });
+        console.timeEnd('calculatingTime');
+    }else if(s_src==up){
+        console.time('calculatingTime');
+        total_arr.sort(function(a,b){
+            return parseFloat(a.price) - parseFloat(b.price);
+        });
+        console.timeEnd('calculatingTime');
+    }else if(d_src==down){
+        total_arr.sort(function(a,b){
+            return parseFloat(b.percent) - parseFloat(a.percent);
+        });
+    }else if(d_src==up){
+        total_arr.sort(function(a,b){
+            return parseFloat(a.percent) - parseFloat(b.percent);
+        });
+    }else if(c_src==down){
+        total_arr.sort(function(a,b){
+            return parseFloat(b.conclusion) - parseFloat(a.conclusion);
+        });
+    }else if(c_src==up){
+        total_arr.sort(function(a,b){
+            return parseFloat(a.conclusion) - parseFloat(b.conclusion);
+        });
     }
     for(row in total_arr){
         var tbl_tr = $("tbody tr:nth-child("+(Number(row)+1)+")");
@@ -91,18 +108,40 @@ function create_e_tbl(){ // 영어이름으로~
     var s_src = $("#sortPrice img").attr("src");
     var d_src = $("#d_pre img").attr("src"); 
     var c_src = $("#conclu img").attr("src"); 
-    if(s_src=="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png"){
-        a();
-    }else if(s_src=="https://cdn.upbit.com/images/ico_up_down_1.d63eb3d.png"){
-        b();
-    }else if(d_src=="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png"){
-        c();
-    }else if(d_src=="https://cdn.upbit.com/images/ico_up_down_1.d63eb3d.png"){
-        d();
-    }else if(c_src=="https://cdn.upbit.com/images/ico_up_down_2.71770c7.png"){
-        e();
-    }else if(c_src=="https://cdn.upbit.com/images/ico_up_down_1.d63eb3d.png"){
-        f();
+    if(s_src==down){
+        //a();
+        console.time('calculatingTime');
+        total_arr.sort(function(a,b){
+            return parseFloat(b.price) - parseFloat(a.price);
+        });
+        console.timeEnd('calculatingTime');
+    }else if(s_src==up){
+        //b();
+        console.time('calculatingTime');
+        total_arr.sort(function(a,b){
+            return parseFloat(a.price) - parseFloat(b.price);
+        });
+        console.timeEnd('calculatingTime');
+    }else if(d_src==down){
+        // c();
+        total_arr.sort(function(a,b){
+            return parseFloat(b.percent) - parseFloat(a.percent);
+        });
+    }else if(d_src==up){
+        // d();
+        total_arr.sort(function(a,b){
+            return parseFloat(a.percent) - parseFloat(b.percent);
+        });
+    }else if(c_src==down){
+        // e();
+        total_arr.sort(function(a,b){
+            return parseFloat(b.conclusion) - parseFloat(a.conclusion);
+        });
+    }else if(c_src==up){
+        // f();
+        total_arr.sort(function(a,b){
+            return parseFloat(a.conclusion) - parseFloat(b.conclusion);
+        });
     }
     for(row in total_arr){
         var tbl_tr = $("tbody tr:nth-child("+(Number(row)+1)+")");
@@ -132,19 +171,26 @@ function create_e_tbl(){ // 영어이름으로~
 // input 값 실시간 변경 감지
 $("#in_search").on("propertychange change keyup paste input", function() {
     var currentVal = $(this).val().toLowerCase();
-    console.log(currentVal);
     if(currentVal == oldVal) {
         return;
     }
  
     oldVal = currentVal;
-    for(i = 0; i<total_arr.length;i++){
-        if(total_arr[i].f_name.indexOf(oldVal) > -1 || total_arr[i].e_name.toLowerCase().indexOf(oldVal)>-1){ // 문자열을 포함하고 있으면 
-            $('tbody').children(":eq("+i+")").show();
-        }else{
-            $('tbody').children(":eq("+i+")").hide();
+
+    total_arr.filter((total,idx) => {
+        if(total.f_name.indexOf(oldVal)>-1||total.e_name.toLowerCase().indexOf(oldVal)>-1||total.l_name.toLowerCase().indexOf(oldVal)>-1){
+            return $('tbody').children(":eq("+idx+")").show();
         }
-    }
+        return $('tbody').children(":eq("+idx+")").hide();
+    });
+    // filter 이용전 코드 
+    // for(i = 0; i<total_arr.length;i++){
+    //     if(total_arr[i].f_name.indexOf(oldVal) > -1 || total_arr[i].e_name.toLowerCase().indexOf(oldVal)>-1){ // 문자열을 포함하고 있으면 
+    //         $('tbody').children(":eq("+i+")").show();
+    //     }else{
+    //         $('tbody').children(":eq("+i+")").hide();
+    //     }
+    // }
     
     // body > section > div > div.tbl_body > table > tbody > tr:nth-child(1) > td.name
 });
@@ -203,36 +249,6 @@ function conclu(){ // 거래대금 눌렀을시
     }
 }
 
-function a(){ // 현재가 내림차순 
-    total_arr.sort(function(a,b){
-        return parseFloat(b.price) - parseFloat(a.price);
-    });
-}
-function b(){ //현재가 오름차순
-    total_arr.sort(function(a,b){
-        return parseFloat(a.price) - parseFloat(b.price);
-    });
-}
-function c(){ //전일대비 내림차순
-    total_arr.sort(function(a,b){
-        return parseFloat(b.percent) - parseFloat(a.percent);
-    });
-}
-function d(){ //전일대비 오름차순
-    total_arr.sort(function(a,b){
-        return parseFloat(a.percent) - parseFloat(b.percent);
-    });
-}
-function e(){ //거래대금 내림차순
-    total_arr.sort(function(a,b){
-        return parseFloat(b.conclusion) - parseFloat(a.conclusion);
-    });
-}
-function f(){ //거래대금 오름차순
-    total_arr.sort(function(a,b){
-        return parseFloat(a.conclusion) - parseFloat(b.conclusion);
-    });
-}
 
 
 function addComma(num) {

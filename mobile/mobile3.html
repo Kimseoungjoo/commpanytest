@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mobile3.css"></link>
+</head>
+<body>
+    <div class="container" >
+        <div class="header">
+            <div class="left">
+                <img id="logo" src="hd_logo.png"> 
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-house-chimney"></i> <img id="camera" src="camera.png">
+            </div>
+        </div>
+        <div class="center">
+            <div id=dvcMngmn>기기관리 등록</div>
+        
+          <div id="programming_content" class="user-input">
+          
+			 <div class="innerSetWrap">
+	              <div class="innerarea">
+	                <div>기기종류</div>
+	                <select id="machineSelect" onchange="chageLangSelect(this)">
+	                  <option value="P">본체</option>
+	                  <option value="N">노트북</option>
+	                  <option value="I">맥북</option>
+	                  <option value="M">모니터</option>
+	                  <option value="K">키보드</option>
+	                  <option value="S">마우스</option>
+	                  <option value="E">etc</option>
+	                </select>
+	              </div>
+	            <div class="innerarea">
+	              <div>기기번호</div>
+	              <input type="text" name="device_no" class="machine-input" readonly="readonly"/>
+	            </div>			 
+			 </div>
+			 
+           <div class="area">
+            	<div style='display: inline-block;'>사용자도 같이 등록하기</div>
+            	<input type="checkbox" class="user-check" onchange="oncheck(this)"/>
+            </div>
+            
+              <div id="user_content">
+
+	
+	            <div class="area">
+	              <div>사용자(*)</div>
+	              <input type="text" name="name" class="user-input" />
+	            </div>
+	            <div class="innerSetWrap">
+		            <div class="innerarea">
+		              <div>사용일자(*)</div>
+		              <input type="date" name="userdate" class="user-input" />
+		            </div>
+		            <div class="innerarea">
+		              <div>반납일자</div>
+		              <input type="date" name="returndate" class="user-input" />
+		            </div>
+	            </div>
+	            <div class="area">
+	              <div>비고</div>
+	              <textarea name="etc"></textarea>
+	            </div>
+            </div>
+            
+            			 
+            <div class="area">
+              <div>모델명(*)</div>
+              <input type="text" name="model" class="machine-input regex" />
+              <div class="check"></div>
+            </div>
+
+            
+            <div id = setCheck style="display: none;">  
+                <div style="float: left; text-align: center;">세트유무</div>
+                <input type="checkbox" class="machine-check" onchange="oncheck(this)" />
+                <div class="setChecked" style="display: none;">
+                  <input type="text" id="setInput" placeholder="기기번호를 검색해주세요!" />
+              </div>
+            </div>
+              <div class="innerarea wireless" style="display: none">
+                <div>유무선</div>
+                <select id="wirelessSelect">
+                  <option value="유선">유선</option>
+                  <option value="무선">무선</option>
+                </select>
+              </div>
+            
+
+            <div id="machine-innerWrap">
+            	<div class="innerSetWrap">
+            		<div class="innerarea">
+		                <div>CPU(*)</div>
+		                <input type="text" name="cpu" class="machine-input regex" />
+			            <div class="check"></div>
+		             </div>
+		            <div class="innerarea">
+		                <div>OS(*)</div>
+		                <input type="text" name="os" class="machine-input regex" />
+			            
+		             </div>
+            	</div>
+            	
+            	<div class="innerSetWrap">
+	              <div class="innerarea">
+	                <div>SSD(*)<i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+	                <input type="text" name="ssd1" class="machine-input regex" />
+	               <div class="check"></div>
+	              </div>
+	              <div class="innerarea">
+	                <div>HDD(*)<i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+	                <input type="text" name="hdd1" class="machine-input regex" />
+	              </div>            	
+            	</div>
+            	
+				<div class="innerSetWrap">
+	              <div class="innerarea">
+	                <div>메모리(*)</div>
+	                <input type="text" name="memory" class="machine-input regex" />
+	               <div class="check"></div>
+	              </div>
+	
+	              <div class="innerarea">
+	                <div>VGA</div>
+	                <input type="text" name="vga" class="machine-input regex" />
+	              </div>
+				</div>
+            </div>
+            	
+            <div class="innerSetWrap">
+	            <div class="innerarea">
+	              <div>입고일자</div>
+	              <input type="date" name="fromdate" class="machine-input" />
+	            </div>
+	            <div class="innerarea">
+	              <div>수정일자</div>
+	              <input type="date" name="updatedate" class="machine-input" />
+	            </div>
+            </div>
+            
+			<div class="innerSetWrap">
+	            <div class="innerarea">
+	              <div>위치(*)</div>
+	              <input type="text" name="location" class="machine-input" />
+	            </div>
+	            <div class="innerarea">
+              		<div>구입가격</div>
+              		<input type="text" name="price" class="machine-input"/>
+            	</div>
+			</div>
+
+            <div class="innerSetWrap">
+              <div class="innerarea">
+                <div>상태</div>
+                <select class="status">
+                  <option value="양호">양호</option>
+                  <option value="고장">고장</option>
+                  <option value="폐기">폐기</option>
+                </select>
+              </div>
+              <div class="innerarea">
+                <div>제조사(*)</div>
+                <input
+                  type="text"
+                  name="manufacturer"
+                  class="machine-input"
+                />
+              </div>
+            </div>
+
+            
+            <div class="area">
+              <div>비고</div>
+              <textarea id="textarea" name="etc"></textarea>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <div class="f_left">
+                <button class="prev">&#60; prev</button>
+            </div>
+            <div class="f_right">
+                <button class="next">next &#62;</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>

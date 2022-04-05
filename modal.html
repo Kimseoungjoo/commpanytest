@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="modal" class="modal-overlay">
+    	<div class="modal-window">
+    		<div class="title">
+    			<div class="left">
+    				<button>저장</button>
+    				<button>삭제</button>
+    			</div>
+    			<div class="right">
+    				<button>닫기</button>
+    			</div>
+    		</div>
+    		<div class="container">
+    			<div class="warning">출근시각을 수정하시면 수정사실이 기록됩니다.</div>
+    			<div class="modal_tbl">
+    				<table>
+    					<tr>
+	    					<td>구분</td>
+    						<td>
+                                <div class="radio">
+                                    <input type="radio" name="because"><label>출/퇴근</label>
+                                    <input type="radio" name="because"><label>휴일근무</label>
+                                    <input type="radio" name="because"><label>파견</label>
+                                    <input type="radio" name="because"><label>결근</label>
+                                    <input type="radio" name="because"><label>외근</label>
+                                    <input type="radio" name="because"><label>조퇴</label>
+                                    <input type="radio" name="because"><label>외출</label>
+                                    <input type="radio" name="because"><label>출장</label>
+                                    <input type="radio" name="because"><label>휴가</label>
+                                </div>
+    						</td>
+    					</tr>
+    					<tr class="time">
+    						<td>출근시간<input type="checkbox" id="check1" checked><label for="check1"></label></td>
+    						<td><input type="text" id="datepicker2"><input type="text" class="hour">시<input type="text" class="min">분</td>
+    					</tr>
+    					<tr class="time">
+    						<td>퇴근시간<input type="checkbox" id="check2" checked><label for="check2"></label></td>
+    						<td><input type="text" id="datepicker2"><input type="text" class="hour">시<input type="text" class="min">분</td>
+    					</tr>
+    					<tr class="text_area">
+    						<td>내용 및 사유 </br>
+    							(한글200자 이내)
+    						</td>
+    						<td><textarea rows="" cols=""></textarea></td>
+    					</tr>
+    				</table>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+</html>
