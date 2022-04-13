@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <title>Document</title>
+    <script 
+       src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js">
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="reader"></div>
+    <input type="file" id="qr-input-file" accept="image/*">
+<!-- 
+  Or add captured if you only want to enable smartphone camera, PC browsers will ignore it.
+-->
+
+<input type="file" id="qr-input-file" accept="image/*" capture>
+    <script src="qrCodeScanner.js"></script>
+    <script src="qrCodeReader.js"></script>
+</body>
+</html>
